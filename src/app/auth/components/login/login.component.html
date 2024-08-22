@@ -1,0 +1,42 @@
+<div class="container py-4 d-flex flex-column justify-content-between align-items-center my-100vh">
+    <div class="row justify-content-center">
+        <img src="../../../../assets/Logo.png" alt="logo" class="my-logo">
+    </div>
+    <div class="row my-w-60">
+        <p class="auth-p">
+            Welcome back!
+        </p>
+        <h2 class="auth-h">
+            Login to your account
+        </h2>
+
+    </div>
+    <div class="row my-w-60">
+        <div *ngIf="errorMessage" class="alert alert-warning" role="alert">
+            {{errorMessage}}
+          </div>
+        <form [formGroup]="loginForm" (ngSubmit)="submitLogin()">
+            <div class="form-group">
+                <label for="email" class="py-2 auth-lable">E-mail</label>
+                <input type="email" formControlName="email" class=" auth-input border-0" id="email" placeholder="john@mail.com">
+                <span class="text-danger" *ngIf="loginForm.controls?.['email']?.hasError('required') && loginForm.controls?.['email']?.touched">
+                    email is <strong>required</strong>
+                </span>
+            </div>
+            <div class="form-group pt-3">
+                <label for="password" class="py-2 auth-lable">Password</label>
+                <input type="password" formControlName="password" class=" auth-input border-0" id="password" placeholder="* * * * * *">
+                <span class="text-danger" *ngIf="loginForm.controls?.['password']?.hasError('required') && loginForm.controls?.['password']?.touched">
+                    password is <strong>required</strong>
+                </span>
+                
+            </div>
+            <div class="form-check auth-checkbox-color d-flex align-items-center">
+                <input class="auth-checkbox form-check-input" type="checkbox" (click)="changingIsCheck()" >
+                <label class="ps-2 auth-checkbox-lable">Remember Me</label>
+            </div>
+            <button type="submit" class="auth-main-btn mt-3 w-100 py-2 mt-5 rounded-3">Login</button>
+            <button class="auth-sec-btn mt-3 w-100 py-2 rounded-3" [routerLink]="['/register']">Register</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+.phone {
+  height: 5vh;
+  color: white;
+  font-weight: 600;
+}
+.first-nav {
+  background-color: #393280;
+}
+.phone-icon {
+  rotate: 20deg;
+}
+.social {
+  color: white;
+}
+
+.social > svg {
+  transition: all 0.5s;
+}
+
+.social > svg:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+
+.social > i {
+  transition: all 0.5s;
+}
+
+.social > i:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+.sec-nav {
+  height: 4rem;
+}
+.circle {
+  height: 3rem;
+  width: 3rem;
+  background-color: #c4c4c4;
+}
+.sec-nav-icon {
+  color: #393280;
+}
+.my-nav-item {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+
+  letter-spacing: 0.12em;
+  text-align: left;
+}
+.my-nav-item:hover{
+  cursor: pointer;
+  color: #ffbcb1;;
+}
+
+.my-active-nav-item{
+  color: #ED553B;
+}
+
+.btn-img{
+  background: #ED553B;
+  border: 2px solid white;
+}
+
+.div-btn-img{
+
+  border: 2px solid #ED553B;
+}
+.btn-btn-img{
+  all: unset;
+}

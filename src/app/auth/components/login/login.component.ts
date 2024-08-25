@@ -42,7 +42,7 @@ callLoginApi(){
         sessionStorage.setItem('userPayload',JSON.stringify(res))
        }
        
-       this._router.navigate(['register'])
+       this._router.navigate(['store/home'])
     },
     error:err=> {
   this.errorMessage=err.error.message;

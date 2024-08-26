@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 // import function to register Swiper custom elements
 import { register } from 'swiper/element/bundle';
+import { FooterComponent } from './componenrs/footer/footer.component';
 // register Swiper custom elements
 register();
 
@@ -15,7 +16,8 @@ register();
   declarations: [
     LayoutComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,

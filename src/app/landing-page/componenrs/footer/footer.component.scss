@@ -1,0 +1,121 @@
+.footer-section {
+  background-color: #ed553b;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer-logo img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.footer-social-icons a {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.footer-title {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.05px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.78px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.footer-privacy a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.footer-privacy a:hover {
+  text-decoration: underline;
+}
+
+.footer-privacy a:last-child {
+  margin-right: 0;
+}
+
+.footer-privacy {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.78px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+// .footer-section::before {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-image: url('https://via.placeholder.com/150');
+//     background-repeat: no-repeat;
+//     background-position: top right;
+//     opacity: 0.1;
+//     pointer-events: none;
+// }
+.bg-img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+.bg-img2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+}

@@ -394,8 +394,6 @@
   height: auto;
 }
 
-
-
 .countdown span {
   display: inline-block;
   text-align: center;
@@ -460,147 +458,180 @@
 // //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 .subscribe-section {
-    width: 100%;
-    background: #FCEBEA;
+  width: 100%;
+  background: #fcebea;
 
-    padding: 150px 50px;
-    color: white;
-    border-radius: 8px;
+  padding: 150px 50px;
+  color: white;
+  border-radius: 8px;
 }
-.my-sub-contain{
-    background-color: #e84c3d;
+.my-sub-contain {
+  background-color: #e84c3d;
 }
 
 .subscribe-title {
-    font-family: Inter;font-size: 56px;font-weight: 700;line-height: 67.2px;letter-spacing: 0.01em;text-align: center;
+  font-family: Inter;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+  letter-spacing: 0.01em;
+  text-align: center;
 }
 
 .subscribe-text {
-    font-family: Inter;font-size: 20px;font-weight: 500;line-height: 41.6px;letter-spacing: 0.02em;text-align: center;width: 50%;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 41.6px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  width: 50%;
 }
 
-.subscribe-form{
-    background: white;
-    width: 100%;
+.subscribe-form {
+  background: white;
+  width: 100%;
 }
 
 .subscribe-form .form-control {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .subscribe-form .btn {
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .input-group-text {
-    background-color: white;
-    border: none;
-    border-radius: 4px 0 0 4px;
+  background-color: white;
+  border: none;
+  border-radius: 4px 0 0 4px;
 }
 
 .input-group-text img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
-.form-text{
-    font-family: Inter;font-size: 18px;font-weight: 400;line-height: 21.78px;text-align: left;color: #57656C;
+.form-text {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.78px;
+  text-align: left;
+  color: #57656c;
 }
-.form-div{
-    position: absolute;
-    bottom: 0;
-    left: 25%;
-    transform: translateY(50%);
+.form-div {
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  transform: translateY(50%);
 }
-.my-bg-1{
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.my-bg-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
 }
-.my-bg-2{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.my-bg-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
 }
-.my-bg-3{
-    position: absolute;
-    top: 0;
-    left: 0;
+.my-bg-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 .latest-articles-section {
-    background-color: #ffffff;
-    padding-top: 50px;
-    padding-bottom: 50px;
+  background-color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .section-subtitle {
-    font-size: 14px;
-    color: #6c757d;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15.73px;
+  letter-spacing: 0.12em;
+  text-align: center;
+  color: #7a7a7a;
 }
 
 .section-title {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 40px;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 58.09px;
+  text-align: center;
+  color: #173f5f;
 }
 
 .card {
-    border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .card-img-top {
-    height: 300px;
-    object-fit: cover;
+  height: 300px;
+  object-fit: cover;
 }
 
 .card-body {
-    padding: 20px;
+  padding: 20px;
 }
 
-.card-date {
-    font-size: 14px;
-    color: #6c757d;
-    margin-bottom: 10px;
+.my-card-date {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.15px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: #74642f;
 }
 
-.card-title {
-    font-size: 18px;
-    font-weight: bold;
+.my-card-title {
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 43.16px;
+  text-align: left;
+  color: #173f5f;
 }
 
-.card-footer {
-    background-color: transparent;
-    border-top: none;
-    padding-bottom: 20px;
+.my-card-footer {
+  background-color: transparent;
+  border-top: none;
+  padding-bottom: 20px;
 }
 
-.card-footer a {
-    color: #6c757d;
-    margin-right: 10px;
+.my-card-footer a {
+  color: #173f5f;
+  margin-right: 10px;
 }
 
-.card-footer a:hover {
-    color: #000000;
+.my-card-footer a:hover {
+  color: #03345d;
+  cursor: pointer;
 }
 
 .btn-outline-dark {
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-weight: bold;
-    color: #333;
-    border: 2px solid #333;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  color: #333;
+  border: 2px solid #333;
 }
 
 .btn-outline-dark:hover {
-    background-color: #333;
-    color: #ffffff;
+  background-color: #333;
+  color: #ffffff;
 }

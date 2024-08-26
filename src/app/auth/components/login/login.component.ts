@@ -14,6 +14,11 @@ export class LoginComponent implements OnInit {
   loginForm!:FormGroup
 constructor(private _formBuilder:FormBuilder,private _authService:AuthService,private _router:Router){}
 ngOnInit(): void {
+  const userPayload =localStorage.getItem('userPayload')
+  if (userPayload && JSON.parse(userPayload).data.accessToken) {
+    this._router.navigate(['store/home']) ;}
+
+  
   this.initLoginForm()
 }
 initLoginForm(){

@@ -122,8 +122,9 @@
 box-sizing: border-box;
   border-radius: 50%;
 opacity: 1;
-  bottom: calc(50% - 15px);
-  right: calc(50% - 15px) ;
+  bottom: 50%;
+  right: 50% ;
+  transform: translate(50%, 50%);
 
 
 background: transparent;
@@ -162,4 +163,24 @@ border-radius: 50%;
   background-color: #ef6b4a;
   border: 3px solid #ef6b4a;
   color: white;
+}
+
+
+.swiper-buttons-cat{
+  position: absolute;
+  display: flex;
+justify-content: flex-end;
+width: 100%;
+right: 0;
+
+
+}
+.mySwiperCat{
+  overflow: visible !important;
+}
+.cat-swiper{
+  position: relative !important;
+  right: unset !important;
+  left :unset !important;
+  transform: translatey(-100%);
 }

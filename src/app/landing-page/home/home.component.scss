@@ -32,11 +32,18 @@
 .header-book-img {
   scale: 0.8;
 }
-.swiper-pagination {
+.swiper-pagination-h {
   position: absolute;
   display: flex;
   bottom: 10%;
   left: 5rem;
+}
+
+.swiper-pagination-new {
+position: relative;
+  display: flex;
+justify-content: center;
+bottom: 10%;
 }
 
 .my-text {

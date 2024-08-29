@@ -161,13 +161,13 @@
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
+      <div class="swiper-pagination swiper-pagination-h"></div>
     </div>
   </div>
 </header>
 
 <main>
-  <div class="container my-5 position-relative">
+  <div class="container overflow-hidden my-5 position-relative">
     <!-- Categories Header -->
     <div class="text-start mb-4">
       <h6 class="my-categoty">Categories</h6>
@@ -176,44 +176,108 @@
 
     <!-- Categories Row -->
     <div class="row text-center">
-      <!-- Higher Education -->
-      <div class="col-md-4">
-        <div class="">
-          <img
-            src="../../../assets/Rectangle 1.png"
-            class="card-img-top"
-            alt="Higher Education"
-          />
-          <div class="card-body">
-            <h5 class="card-title cat-title py-4">Higher Education</h5>
-          </div>
-        </div>
+      <div class="swiper mySwiperCat">
+        <div class="swiper-buttons-cat">
+          <div class="px-2"><div class="swiper-button-prev cat-swiper"></div></div>
+          <div class="px-2"><div class="swiper-button-next cat-swiper"></div></div>
+          
+          
       </div>
-      <!-- Management Books -->
-      <div class="col-md-4">
-        <div class="">
-          <img
-            src="../../../assets/Rectangle 2.png"
-            class="card-img-top"
-            alt="Management Books"
-          />
-          <div class="card-body">
-            <h5 class="card-title cat-title py-4">Management Books</h5>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!-- Higher Education -->
+            <div class="col-md-4 w-100">
+              <div class="">
+                <img
+                  src="../../../assets/Rectangle 1.png"
+                  class="card-img-top"
+                  alt="Higher Education"
+                />
+                <div class="card-body">
+                  <h5 class="card-title cat-title py-4">Higher Education</h5>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <!-- Engineering Books -->
-      <div class="col-md-4">
-        <div class="">
-          <img
-            src="../../../assets/Rectangle 3.png"
-            class="card-img-top"
-            alt="Engineering Books"
-          />
-          <div class="card-body">
-            <h5 class="card-title cat-title py-4">Engineering Books</h5>
+          <div class="swiper-slide">
+            <!-- Management Books -->
+            <div class="col-md-4 w-100">
+              <div class="">
+                <img
+                  src="../../../assets/Rectangle 2.png"
+                  class="card-img-top"
+                  alt="Management Books"
+                />
+                <div class="card-body">
+                  <h5 class="card-title cat-title py-4">Management Books</h5>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="swiper-slide">
+                  <!-- Engineering Books -->
+            <div class="col-md-4 w-100">
+              <div class="">
+                <img
+                  src="../../../assets/Rectangle 3.png"
+                  class="card-img-top"
+                  alt="Engineering Books"
+                />
+                <div class="card-body">
+                  <h5 class="card-title cat-title py-4">Engineering Books</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <!-- Higher Education -->
+            <div class="col-md-4 w-100">
+              <div class="">
+                <img
+                  src="../../../assets/Rectangle 1.png"
+                  class="card-img-top"
+                  alt="Higher Education"
+                />
+                <div class="card-body">
+                  <h5 class="card-title cat-title py-4">Higher Education</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <!-- Management Books -->
+            <div class="col-md-4 w-100">
+              <div class="">
+                <img
+                  src="../../../assets/Rectangle 2.png"
+                  class="card-img-top"
+                  alt="Management Books"
+                />
+                <div class="card-body">
+                  <h5 class="card-title cat-title py-4">Management Books</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+                  <!-- Engineering Books -->
+            <div class="col-md-4 w-100">
+              <div class="">
+                <img
+                  src="../../../assets/Rectangle 3.png"
+                  class="card-img-top"
+                  alt="Engineering Books"
+                />
+                <div class="card-body">
+                  <h5 class="card-title cat-title py-4">Engineering Books</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
+      
+      
       </div>
     </div>
 
@@ -237,11 +301,7 @@
       </button>
     </div>
 
-    <!-- Navigation Arrows -->
-    <div class="navigation-arrows">
-      <button class="btn btn-light"><</button>
-      <button class="btn btn-light">></button>
-    </div>
+
   </div>
 
   <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
@@ -255,8 +315,12 @@
 
     <!-- Books Row -->
     <div class="row justify-content-center px-5">
-      <!-- Book 1 -->
-      <div class="col-md-3">
+
+      <div class="swiper mySwiperNew">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!-- Book 1 -->
+      <div class="col-md-3 w-100">
         <div class="book-card">
           <div class="book-img">
             <img
@@ -273,8 +337,10 @@
           <p class="book-price">$ 40.00</p>
         </div>
       </div>
-      <!-- Book 2 -->
-      <div class="col-md-3">
+          </div>
+          <div class="swiper-slide">
+            <!-- Book 2 -->
+      <div class="col-md-3 w-100">
         <div class="book-card">
           <div class="book-img">
             <img
@@ -291,8 +357,10 @@
           <p class="book-price">$ 38.00</p>
         </div>
       </div>
-      <!-- Book 3 -->
-      <div class="col-md-3">
+          </div>
+          <div class="swiper-slide">
+            <!-- Book 3 -->
+      <div class="col-md-3 w-100">
         <div class="book-card">
           <div class="book-img">
             <img
@@ -309,8 +377,10 @@
           <p class="book-price">$ 45.00</p>
         </div>
       </div>
-      <!-- Book 4 -->
-      <div class="col-md-3">
+          </div>
+          <div class="swiper-slide">
+            <!-- Book 4 -->
+            <div class="col-md-3 w-100">
         <div class="book-card">
           <div class="book-img">
             <img
@@ -321,20 +391,111 @@
             <button class="add-to-cart-btn">ADD TO CART</button>
           </div>
         </div>
+        
         <div class="book-details">
           <h5 class="book-title">Once Upon A Time</h5>
           <p class="book-author">Klien Marry</p>
           <p class="book-price">$ 35.00</p>
         </div>
       </div>
+          </div>
+          <div class="swiper-slide">
+            <!-- Book 1 -->
+      <div class="col-md-3 w-100">
+        <div class="book-card">
+          <div class="book-img">
+            <img
+              src="../../../assets/book5 4.png"
+              alt="Simple Way Of Piece Life"
+              class="img-fluid"
+            />
+            <button class="add-to-cart-btn">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="book-details">
+          <h5 class="book-title">Simple Way Of Piece Life</h5>
+          <p class="book-author">Armor Ramsey</p>
+          <p class="book-price">$ 40.00</p>
+        </div>
+      </div>
+          </div>
+          <div class="swiper-slide">
+            <!-- Book 2 -->
+      <div class="col-md-3 w-100">
+        <div class="book-card">
+          <div class="book-img">
+            <img
+              src="../../../assets/book3 4.png"
+              alt="Great Travel At Desert"
+              class="img-fluid"
+            />
+            <button class="add-to-cart-btn">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="book-details">
+          <h5 class="book-title">Great Travel At Desert</h5>
+          <p class="book-author">Sanchit Howdy</p>
+          <p class="book-price">$ 38.00</p>
+        </div>
+      </div>
+          </div>
+          <div class="swiper-slide">
+            <!-- Book 3 -->
+      <div class="col-md-3 w-100">
+        <div class="book-card">
+          <div class="book-img">
+            <img
+              src="../../../assets/book16 1.png"
+              alt="The Lady Beauty Scarlett"
+              class="img-fluid"
+            />
+            <button class="add-to-cart-btn">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="book-details">
+          <h5 class="book-title">The Lady Beauty Scarlett</h5>
+          <p class="book-author">Arthur Doyle</p>
+          <p class="book-price">$ 45.00</p>
+        </div>
+      </div>
+          </div>
+          <div class="swiper-slide">
+            <!-- Book 4 -->
+            <div class="col-md-3 w-100">
+        <div class="book-card">
+          <div class="book-img">
+            <img
+              src="../../../assets/book4 4.png"
+              alt="Once Upon A Time"
+              class="img-fluid"
+            />
+            <button class="add-to-cart-btn">ADD TO CART</button>
+          </div>
+        </div>
+        
+        <div class="book-details">
+          <h5 class="book-title">Once Upon A Time</h5>
+          <p class="book-author">Klien Marry</p>
+          <p class="book-price">$ 35.00</p>
+        </div>
+      </div>
+          </div>
+        </div>
+        <div class="swiper-pagination swiper-pagination-new"></div>
+      </div>
+      
+      
+      
+      
+      
     </div>
 
     <!-- Carousel Indicators -->
-    <div class="d-flex justify-content-center my-4">
+    <!-- <div class="d-flex justify-content-center my-4">
       <span class="carousel-indicator active"></span>
       <span class="carousel-indicator"></span>
       <span class="carousel-indicator"></span>
-    </div>
+    </div> -->
 
     <!-- View All Products Link -->
     <div class="text-center">
@@ -344,100 +505,357 @@
 
   <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
   <div class="container-fluid my-5 position-relative Featured-Book">
-    <div class="row align-items-center">
-      <!-- Book Image -->
-      <div class="col-md-5 text-center">
-        <img
-          src="../../../assets/book.png"
-          alt="Featured Book"
-          class="img-fluid"
-        />
+    <div class="swiper mySwiperBook">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="row align-items-center">
+            <!-- Book Image -->
+            <div class="col-md-5 text-center">
+              <img
+                src="../../../assets/book.png"
+                alt="Featured Book"
+                class="img-fluid"
+              />
+            </div>
+            <!-- Book Details -->
+            <div class="col-md-7">
+              <h3 class="featured-title pb-5">Featured Book</h3>
+              <p class="featured-author">BY TIMBUR HOOD</p>
+              <h4 class="book-title pt-3">Birds Gonna Be Happy</h4>
+              <p class="book-description py-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
+                feugiat amet, libero ipsum enim pharetra hac.
+              </p>
+              <p class="book-price pb-5">$ 45.00</p>
+              <button class="home-sec-btn rounded-3 px-4">
+                View more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="row align-items-center">
+            <!-- Book Image -->
+            <div class="col-md-5 text-center">
+              <img
+                src="../../../assets/book.png"
+                alt="Featured Book"
+                class="img-fluid"
+              />
+            </div>
+            <!-- Book Details -->
+            <div class="col-md-7">
+              <h3 class="featured-title pb-5">Featured Book 2</h3>
+              <p class="featured-author">BY TIMBUR HOOD</p>
+              <h4 class="book-title pt-3">Birds Gonna Be Happy</h4>
+              <p class="book-description py-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
+                feugiat amet, libero ipsum enim pharetra hac.
+              </p>
+              <p class="book-price pb-5">$ 45.00</p>
+              <button class="home-sec-btn rounded-3 px-4">
+                View more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="row align-items-center">
+            <!-- Book Image -->
+            <div class="col-md-5 text-center">
+              <img
+                src="../../../assets/book.png"
+                alt="Featured Book"
+                class="img-fluid"
+              />
+            </div>
+            <!-- Book Details -->
+            <div class="col-md-7">
+              <h3 class="featured-title pb-5">Featured Book3</h3>
+              <p class="featured-author">BY TIMBUR HOOD</p>
+              <h4 class="book-title pt-3">Birds Gonna Be Happy</h4>
+              <p class="book-description py-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
+                feugiat amet, libero ipsum enim pharetra hac.
+              </p>
+              <p class="book-price pb-5">$ 45.00</p>
+              <button class="home-sec-btn rounded-3 px-4">
+                View more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="row align-items-center">
+            <!-- Book Image -->
+            <div class="col-md-5 text-center">
+              <img
+                src="../../../assets/book.png"
+                alt="Featured Book"
+                class="img-fluid"
+              />
+            </div>
+            <!-- Book Details -->
+            <div class="col-md-7">
+              <h3 class="featured-title pb-5">Featured Book4</h3>
+              <p class="featured-author">BY TIMBUR HOOD</p>
+              <h4 class="book-title pt-3">Birds Gonna Be Happy</h4>
+              <p class="book-description py-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
+                feugiat amet, libero ipsum enim pharetra hac.
+              </p>
+              <p class="book-price pb-5">$ 45.00</p>
+              <button class="home-sec-btn rounded-3 px-4">
+                View more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- Book Details -->
-      <div class="col-md-7">
-        <h3 class="featured-title pb-5">Featured Book</h3>
-        <p class="featured-author">BY TIMBUR HOOD</p>
-        <h4 class="book-title pt-3">Birds Gonna Be Happy</h4>
-        <p class="book-description py-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
-          feugiat amet, libero ipsum enim pharetra hac.
-        </p>
-        <p class="book-price pb-5">$ 45.00</p>
-        <button class="home-sec-btn rounded-3 px-4">
-          View more
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-arrow-right"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-            />
-          </svg>
-        </button>
-      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination swiper-pagination-new"></div>
     </div>
 
+
     <!-- Carousel Indicators and Arrows -->
-    <div class="d-flex justify-content-center align-items-center mt-4">
+    <!-- <div class="d-flex justify-content-center align-items-center mt-4">
       <div class="carousel-indicators">
         <span class="carousel-indicator active"></span>
         <span class="carousel-indicator"></span>
         <span class="carousel-indicator"></span>
       </div>
-    </div>
+    </div> -->
   </div>
   <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-  <div class="container my-3">
-    <div class="row align-items-center offer-section my-5">
-      <div class="col-md-6">
-        <h2 class="offer-heading">
-          All books are 50% off now!<br />Don't miss such a deal!
-        </h2>
-        <p class="offer-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
-          feugiat amet, libero ipsum enim pharetra hac.
-        </p>
+  <div class="container my-3 offer-section">
+    <div class="swiper mySwiperBook">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="row align-items-center  my-5">
+            <div class="col-md-6">
+              <h2 class="offer-heading">
+                All books are 50% off now!<br />Don't miss such a deal!
+              </h2>
+              <p class="offer-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
+                feugiat amet, libero ipsum enim pharetra hac.
+              </p>
+      
+              <div class="countdown">
+                <span
+                  ><span class="countdown-num">768</span> <br />
+                  <span class="countdown-text">DAYS</span></span
+                >
+                <span
+                  ><span class="countdown-num">01</span> <br />
+                  <span class="countdown-text">HOUR</span></span
+                >
+                <span
+                  ><span class="countdown-num">27</span> <br />
+                  <span class="countdown-text">MINT</span></span
+                >
+                <span
+                  ><span class="countdown-num">55</span> <br />
+                  <span class="countdown-text">SEC</span></span
+                >
+              </div>
+            </div>
+      
+            <div class="col-md-6 text-center">
+              <img
+                src="../../../assets/Unsplash.png"
+                alt="Books on Sale"
+                class="books-img"
+              />
+            </div>
 
-        <div class="countdown">
-          <span
-            ><span class="countdown-num">768</span> <br />
-            <span class="countdown-text">DAYS</span></span
-          >
-          <span
-            ><span class="countdown-num">01</span> <br />
-            <span class="countdown-text">HOUR</span></span
-          >
-          <span
-            ><span class="countdown-num">27</span> <br />
-            <span class="countdown-text">MINT</span></span
-          >
-          <span
-            ><span class="countdown-num">55</span> <br />
-            <span class="countdown-text">SEC</span></span
-          >
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="row align-items-center  my-5">
+            <div class="col-md-6">
+              <h2 class="offer-heading">
+                All books are 50% off now!<br />Don't miss such a deal!
+              </h2>
+              <p class="offer-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
+                feugiat amet, libero ipsum enim pharetra hac.
+              </p>
+      
+              <div class="countdown">
+                <span
+                  ><span class="countdown-num">768</span> <br />
+                  <span class="countdown-text">DAYS</span></span
+                >
+                <span
+                  ><span class="countdown-num">01</span> <br />
+                  <span class="countdown-text">HOUR</span></span
+                >
+                <span
+                  ><span class="countdown-num">27</span> <br />
+                  <span class="countdown-text">MINT</span></span
+                >
+                <span
+                  ><span class="countdown-num">55</span> <br />
+                  <span class="countdown-text">SEC</span></span
+                >
+              </div>
+            </div>
+      
+            <div class="col-md-6 text-center">
+              <img
+                src="../../../assets/Unsplash.png"
+                alt="Books on Sale"
+                class="books-img"
+              />
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="row align-items-center  my-5">
+            <div class="col-md-6">
+              <h2 class="offer-heading">
+                All books are 50% off now!<br />Don't miss such a deal!
+              </h2>
+              <p class="offer-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
+                feugiat amet, libero ipsum enim pharetra hac.
+              </p>
+      
+              <div class="countdown">
+                <span
+                  ><span class="countdown-num">768</span> <br />
+                  <span class="countdown-text">DAYS</span></span
+                >
+                <span
+                  ><span class="countdown-num">01</span> <br />
+                  <span class="countdown-text">HOUR</span></span
+                >
+                <span
+                  ><span class="countdown-num">27</span> <br />
+                  <span class="countdown-text">MINT</span></span
+                >
+                <span
+                  ><span class="countdown-num">55</span> <br />
+                  <span class="countdown-text">SEC</span></span
+                >
+              </div>
+            </div>
+      
+            <div class="col-md-6 text-center">
+              <img
+                src="../../../assets/Unsplash.png"
+                alt="Books on Sale"
+                class="books-img"
+              />
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="row align-items-center  my-5">
+            <div class="col-md-6">
+              <h2 class="offer-heading">
+                All books are 50% off now!<br />Don't miss such a deal!
+              </h2>
+              <p class="offer-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
+                feugiat amet, libero ipsum enim pharetra hac.
+              </p>
+      
+              <div class="countdown">
+                <span
+                  ><span class="countdown-num">768</span> <br />
+                  <span class="countdown-text">DAYS</span></span
+                >
+                <span
+                  ><span class="countdown-num">01</span> <br />
+                  <span class="countdown-text">HOUR</span></span
+                >
+                <span
+                  ><span class="countdown-num">27</span> <br />
+                  <span class="countdown-text">MINT</span></span
+                >
+                <span
+                  ><span class="countdown-num">55</span> <br />
+                  <span class="countdown-text">SEC</span></span
+                >
+              </div>
+            </div>
+      
+            <div class="col-md-6 text-center">
+              <img
+                src="../../../assets/Unsplash.png"
+                alt="Books on Sale"
+                class="books-img"
+              />
+            </div>
+
+          </div>
         </div>
       </div>
 
-      <div class="col-md-6 text-center">
-        <img
-          src="../../../assets/Unsplash.png"
-          alt="Books on Sale"
-          class="books-img"
-        />
-      </div>
-      <div class="dots">
-        <span class="active"></span>
-        <span></span>
-        <span></span>
-      </div>
+      <div class="swiper-pagination swiper-pagination-new"></div>
     </div>
+
     <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
   </div>
+
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
   <section class="my-5 subscribe-section pt-0 position-relative">
     <div
       class="container text-center my-sub-contain d-flex flex-column align-items-center justify-content-center position-relative py-5"

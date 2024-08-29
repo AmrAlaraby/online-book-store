@@ -20,14 +20,21 @@ ngOnInit(): void {
 
   
   this.initLoginForm()
+
+
 }
-initLoginForm(){
-  this.loginForm= this._formBuilder.group({
-    email:['',Validators.required],
-    password:['',Validators.required]
-  })
+initLoginForm() {
+  this.loginForm = this._formBuilder.group({
+    email: ['', [Validators.required, Validators.email]],
+    password: ['', [
+      Validators.required,
+      Validators.minLength(3),
+      Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{3,}$/)
+    ]]
+  });
 }
 submitLogin(){
+  debugger
   console.log(this.loginForm);
   if (this.loginForm.valid){
   this.callLoginApi()

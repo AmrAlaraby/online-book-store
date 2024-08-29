@@ -1,4 +1,4 @@
-<div class="container py-4 d-flex flex-column justify-content-between align-items-center my-100vh">
+<div class="container py-4 d-flex flex-column justify-content-around align-items-center my-100vh">
     <div class="row justify-content-center">
         <img src="../../../../assets/Logo.png" alt="logo" class="my-logo">
     </div>
@@ -22,12 +22,18 @@
                 <span class="text-danger" *ngIf="loginForm.controls?.['email']?.hasError('required') && loginForm.controls?.['email']?.touched">
                     email is <strong>required</strong>
                 </span>
+                <span class="text-danger" *ngIf="loginForm.controls?.['email']?.hasError('email') && loginForm.controls?.['email']?.touched">
+                    please enter an <strong>email</strong>
+                </span>
             </div>
             <div class="form-group pt-3">
                 <label for="password" class="py-2 auth-lable">Password</label>
                 <input type="password" formControlName="password" class=" auth-input border-0" id="password" placeholder="* * * * * *">
                 <span class="text-danger" *ngIf="loginForm.controls?.['password']?.hasError('required') && loginForm.controls?.['password']?.touched">
                     password is <strong>required</strong>
+                </span>
+                <span class="text-danger" *ngIf="loginForm.controls?.['password']?.hasError('pattern') && loginForm.controls?.['password']?.touched">
+                    password is must contain<strong> at least 3 characters, one uppercase letter, one lowercase letter, one number, one special character.</strong>
                 </span>
                 
             </div>

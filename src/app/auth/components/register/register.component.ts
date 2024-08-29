@@ -19,10 +19,20 @@ ngOnInit(): void {
 }
 initRegisterForm(){
   this.registerForm= this._formBuilder.group({
-    email:['',Validators.required],
-    password:['',Validators.required],
-    first_name:['',Validators.required],
-    last_name:['',Validators.required],
+    email: ['', [Validators.required, Validators.email]],
+    password: ['', [
+      Validators.required,
+      Validators.minLength(3),
+      Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{3,}$/)
+    ]],
+    first_name: ['', [
+      Validators.required,
+      Validators.pattern(/^[A-Za-z][A-Za-z\s]*$/)  // First character must be a letter, followed by letters or spaces
+    ]],
+    last_name: ['', [
+      Validators.required,
+      Validators.pattern(/^[A-Za-z][A-Za-z\s]*$/)  // First character must be a letter, followed by letters or spaces
+    ]],
     role:['Customer',Validators.required],
   })
 }

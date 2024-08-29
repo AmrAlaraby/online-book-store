@@ -133,6 +133,7 @@ border: 1px solid #ED553B!important;
 .swiper-button-next::after,
 .swiper-button-prev::after
 {
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,6 +144,14 @@ width: 44px!important;
 background-color: white;
 border: 1px solid #ED553B;
 border-radius: 50%;
+}
+
+.swiper-button-next::after{
+  content: "➝" !important;
+}
+.swiper-button-prev::after{
+  content: "➝" !important;
+  transform: rotateY(180deg);
 }
 
 .swiper-button-next,
@@ -184,3 +193,10 @@ right: 0;
   left :unset !important;
   transform: translatey(-100%);
 }
+
+
+
+
+
+
+

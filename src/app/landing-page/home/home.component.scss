@@ -98,6 +98,15 @@ bottom: 10%;
   bottom: calc(50% - 1px);
   left: 0;
 }
+.cat-swiper-next::after{
+  background: #ED553B !important;
+  color: white !important;
+}
+
+.cat-swiper-prev::after{
+  border-color: #E5E3DA !important;
+  color: #8C8C8C !important;
+}
 
 .my-categoty-h {
   font-family: Inter;

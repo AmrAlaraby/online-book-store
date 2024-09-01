@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 // import function to register Swiper custom elements
 import { register } from 'swiper/element/bundle';
 import { FooterComponent } from './componenrs/footer/footer.component';
+import { BooksComponent } from './componenrs/books/books.component';
+import { ReactiveFormsModule } from '@angular/forms';
 // register Swiper custom elements
 register();
 
@@ -17,11 +19,13 @@ register();
     LayoutComponent,
     NavbarComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    BooksComponent
   ],
   imports: [
     CommonModule,
-    LandingPageRoutingModule
+    LandingPageRoutingModule,
+    ReactiveFormsModule
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })

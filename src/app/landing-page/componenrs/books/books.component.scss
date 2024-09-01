@@ -1,0 +1,131 @@
+.breadcrumb {
+    background: linear-gradient(82.93deg, #FFE6E6,#F5FFFE);
+    color: #393280;
+}
+.breadcrumb-item:hover{
+cursor: pointer;
+}
+
+.breadcrumb-item{
+    font-family: Inter;font-size: 20px;font-weight: 500;line-height: 32px;text-align: left;color: #393280;
+}
+.filter-section {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+.card {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.price {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.view-toggle button {
+    background-color: transparent;
+    border: none;
+}
+
+.pagination .page-link {
+    color: #0d6efd;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #6c757d;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+}
+
+/* Book Card Styling */
+.book-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .book-img {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .book-img img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .add-to-cart-btn {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    background-color: #ed553b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: none;
+  }
+  
+  .book-img:hover .add-to-cart-btn {
+    display: block;
+  }
+  
+  .book-details {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .book-title {
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.63px;
+    text-align: center;
+    color: #393280;
+  }
+  
+  .book-author {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #888888;
+  }
+  
+  .book-price {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.78px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #ed553b;
+  }
+  

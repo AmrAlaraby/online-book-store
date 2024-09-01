@@ -1,0 +1,161 @@
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb w-100 d-flex justify-content-center align-items-center">
+        <ol class="breadcrumb d-flex justify-content-center align-items-center py-3">
+            <li class="breadcrumb-item breadcrumb-my-item"  [routerLink]="['/store/home']"
+            [routerLinkActive]="['my-active-nav-item']">Home</li>
+            <li class="breadcrumb-item" aria-current="page">books</li>
+        </ol>
+    </nav>
+
+
+<div class="container">
+
+
+    <div class="row">
+        <!-- Filter Section -->
+        <div class="col-md-3">
+            <div class="filter-section p-3">
+                <h5 class="mb-4">Filter</h5>
+                <form   [formGroup]="filterForm" (ngSubmit)="submitFilter()">
+                    <!-- Price Filter -->
+                   
+                        <button type="submit" class="btn btn-primary my-3  w-100">Filter</button>
+                    
+                    
+
+                    <!-- Other Filters -->
+                    <div class="accordion" id="filterAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingPrice">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsePrice" aria-expanded="false"
+                                    aria-controls="collapsePrice">
+                                    price
+                                </button>
+                            </h2>
+                            <div id="collapsePrice" class="accordion-collapse collapse"
+                                aria-labelledby="headingPrice" data-bs-parent="#filterAccordion">
+                                <div class="accordion-body">
+                                    
+                                        <input formControlName="price" class="form-control" placeholder="$" type="number" value="">
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingAuthor">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseAuthor" aria-expanded="false"
+                                    aria-controls="collapseAuthor">
+                                    Author`s Name
+                                </button>
+                            </h2>
+                            <div id="collapseAuthor" class="accordion-collapse collapse"
+                                aria-labelledby="headingAuthor" data-bs-parent="#filterAccordion">
+                                <div class="accordion-body">
+                                    <input formControlName="author" class="form-control" placeholder="Author`s Name" type="text" value="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingBookName">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseBookName" aria-expanded="false"
+                                    aria-controls="collapseBookName">
+                                    Book Name
+                                </button>
+                            </h2>
+                            <div id="collapseBookName" class="accordion-collapse collapse"
+                                aria-labelledby="headingBookName" data-bs-parent="#filterAccordion">
+                                <div class="accordion-body">
+                                    <input formControlName="book" class="form-control" placeholder="Book Name" type="text" value="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add more filters as needed -->
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Product Listing Section -->
+        <div class="col-md-9">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="sort-by">
+                    <label for="sortOptions" class="form-label">Sort by:</label>
+                    <select id="sortOptions" class="form-select">
+                        <option value="alphabetical">Alphabetically, A-Z</option>
+                        <!-- Add more sort options here -->
+                    </select>
+                </div>
+                <div class="showing-results">
+                    <span>Showing {{(page*pageLimit)-(pageLimit-1)}} - {{((page*pageLimit)>(totalBooks))? (totalBooks) :(page*pageLimit)}} of {{totalBooks}} result</span>
+                </div>
+                <div class="show-items">
+                    <label for="showItems" class="form-label">Showing:</label>
+                    <select #size (change)="setPagesLimt((size.value))" id="showItems" class="form-select">
+                        <option value="6">6</option>
+                        <option value="12">12</option>
+                        <option value="24">24</option>
+                        <!-- Add more show options here -->
+                    </select>
+                </div>
+                <div class="view-toggle">
+                    <button class="btn btn-outline-secondary"><i class="bi bi-grid"></i></button>
+                    <button class="btn btn-outline-secondary"><i class="bi bi-list"></i></button>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Product Cards -->
+                <div *ngFor="let book of allBooks?.data" class="col-md-4 mb-4">
+                    <!-- Book 1 -->
+      <div class="w-100">
+        <div class="book-card">
+          <div class="book-img">
+            <img
+              src="../../../assets/book34.png"
+              alt="Simple Way Of Piece Life"
+              class="img-fluid"
+            />
+            <button class="add-to-cart-btn">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="book-details">
+          <h5 class="book-title"> {{book.name}}</h5>
+          <p class="book-author">{{book.author}}</p>
+          <p class="book-price">$ {{book.price}}</p>
+        </div>
+      </div>
+                </div>
+
+                <!-- Repeat similar blocks for other products -->
+
+            </div>
+
+            <!-- Pagination -->
+            <nav  aria-label="Page navigation example">
+                <ul class="pagination  d-flex justify-content-center align-items-center">
+                    <li class="page-item">
+                      <a class="page-link"*ngIf="allBooks?.hasPrevPage" aria-label="Previous " (click)="toPrevPage()">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li *ngFor="let item of pagesArr" [ngClass]="item==page ?'active':''" class="page-item"><a class="page-link" (click)="setPage(item)"> {{item}} </a></li>
+                    <li class="page-item">
+                      <a *ngIf="allBooks?.hasNextPage" class="page-link" aria-label="Next" (click)="toNextPage()">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+            </nav>
+
+        </div>
+    </div>
+</div>

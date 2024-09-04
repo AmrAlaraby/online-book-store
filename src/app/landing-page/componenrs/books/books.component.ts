@@ -18,7 +18,11 @@ export class BooksComponent implements OnInit {
   totalBooks: number = 0;
   filterForm!:FormGroup
   filterParams:string=''
+  num:number=this.num1()
   constructor(private _formBuilder:FormBuilder,private _booksService: BooksService) {}
+  num1():number{
+    return Number(Math.round( Math.random() * 5)+1)
+  }
   ngOnInit(): void {
     this.initFilterForm()
     this.getBooks();

@@ -84,6 +84,8 @@
             </div>
         </div>
 
+        
+
         <!-- Product Listing Section -->
         <div class="col-md-9">
             <div class="d-flex justify-content-between align-items-center mb-4">
@@ -114,13 +116,13 @@
 
             <div class="row">
                 <!-- Product Cards -->
-                <div *ngFor="let book of allBooks?.data" class="col-md-4 mb-4">
+                <div *ngFor="let book of allBooks?.data; let i = index" class="col-md-4 mb-4">
                     <!-- Book 1 -->
       <div class="w-100">
         <div class="book-card">
           <div class="book-img">
             <img
-              src="../../../assets/book34.png"
+              src="../../../assets/book6.png"
               alt="Simple Way Of Piece Life"
               class="img-fluid"
             />

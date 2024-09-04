@@ -4,17 +4,21 @@ import { LayoutComponent } from './componenrs/layout/layout.component';
 import { HomeComponent } from './home/home.component';
 import { authGuard } from '../guards/auth.guard';
 import { BooksComponent } from './componenrs/books/books.component';
+import { CartComponent } from './componenrs/cart/cart.component';
 
 const routes: Routes = [
   {
     path:"",component:LayoutComponent,
     children:[
       {
-        path:'home',component:HomeComponent
+        path:'home',component:HomeComponent,canActivate:[authGuard]
       },
       {
-        path:'books',component:BooksComponent
+        path:'books',component:BooksComponent,canActivate:[authGuard]
       },
+      {
+        path:'cart',component:CartComponent,canActivate:[authGuard]
+      }
      
     ],canActivate:[authGuard]
   }

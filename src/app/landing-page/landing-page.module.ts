@@ -10,6 +10,7 @@ import { register } from 'swiper/element/bundle';
 import { FooterComponent } from './componenrs/footer/footer.component';
 import { BooksComponent } from './componenrs/books/books.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CartComponent } from './componenrs/cart/cart.component';
 // register Swiper custom elements
 register();
 
@@ -20,7 +21,8 @@ register();
     NavbarComponent,
     HomeComponent,
     FooterComponent,
-    BooksComponent
+    BooksComponent,
+    CartComponent
   ],
   imports: [
     CommonModule,

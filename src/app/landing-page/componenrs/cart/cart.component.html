@@ -1,0 +1,297 @@
+<!-- Breadcrumb -->
+<nav
+  aria-label="breadcrumb w-100 d-flex justify-content-center align-items-center"
+>
+  <ol class="breadcrumb d-flex justify-content-center align-items-center py-3">
+    <li
+      class="breadcrumb-item breadcrumb-my-item"
+      [routerLink]="['/store/home']"
+    >
+      Home
+    </li>
+    <li class="breadcrumb-item" aria-current="page">Cart</li>
+  </ol>
+</nav>
+<div class="container mt-5">
+  <div class="row">
+    <!-- Products Details Section -->
+    <div class="col-lg-8">
+      <div class="card my-card mb-4">
+        <div class="card-header">
+          <h5>Products Details</h5>
+        </div>
+        <div class="card-body">
+          <table class="table">
+            <thead>
+              <tr class="border-top border-bottom my-th">
+                <th scope="col">Num</th>
+                <th scope="col">Book</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Cost</th>
+                <th scope="col">Subtotal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- First Product -->
+              <tr>
+                <th scope="row">01.</th>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="../../../../assets/book344.png"
+                      alt="Book Cover"
+                      class="me-2"
+                    />
+                    <span>My Book Cover</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="input-group">
+                    <button class="my-btn-n" type="button">-</button>
+                    <input
+                      type="text"
+                      class="form-control text-center"
+                      value="1"
+                    />
+                    <button class="my-btn-p" type="button">+</button>
+                  </div>
+                </td>
+                <td>36 $</td>
+                <td>36 $</td>
+                <td>
+                  <button class="btn my-btn-danger text-white btn-sm" >X</button>
+                </td>
+              </tr>
+              <!-- Repeat for other products -->
+              <!-- Second Product -->
+              <tr>
+                <th scope="row">02.</th>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://via.placeholder.com/60x90"
+                      alt="Book Cover"
+                      class="img-thumbnail me-2"
+                    />
+                    <span>My Book Cover</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="input-group">
+                    <button class="my-btn-n" type="button">-</button>
+                    <input
+                      type="text"
+                      class="form-control text-center"
+                      value="1"
+                    />
+                    <button class="my-btn-p" type="button">+</button>
+                  </div>
+                </td>
+                <td>36 $</td>
+                <td>36 $</td>
+                <td>
+                  <button class="btn my-btn-danger text-white btn-sm">X</button>
+                </td>
+              </tr>
+              <!-- Third Product -->
+              <tr>
+                <th scope="row">03.</th>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="https://via.placeholder.com/60x90"
+                      alt="Book Cover"
+                      class="img-thumbnail me-2"
+                    />
+                    <span>My Book Cover</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="input-group">
+                    <button class="my-btn-n" type="button">-</button>
+                    <input
+                      type="text"
+                      class="form-control text-center"
+                      value="1"
+                    />
+                    <button class="my-btn-p" type="button">+</button>
+                  </div>
+                </td>
+                <td>36 $</td>
+                <td>36 $</td>
+                <td>
+                  <button class="btn my-btn-danger text-white btn-sm">X</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Summary Section -->
+
+    <div class="col-lg-4">
+      <div class="my-card-s card mb-4">
+        <div class="card-header">
+          <h5>Cart Total Cost</h5>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              Total
+              <span>36 $</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              Tax
+              <span>1.6 $</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              Total Cost
+              <span>37.6 $</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="btn my-btn-danger text-white btn-lg w-100 mt-2" (click)="onSubmit()">
+        Proceed
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-cart-check-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Shipping Data Section -->
+  <div class="row">
+    <div class="col-md-10">
+      <div class="card my-card my-4">
+        <div class="card-header">
+          <h5>Shipping Data</h5>
+        </div>
+        <div class="card-body">
+            <form [formGroup]="shipForm" (ngSubmit)="onSubmit()">
+                <div class="row">
+            <div class="col-md-6 mt-3">
+              <label for="username" class="form-label">User Name</label>
+              <input
+              formControlName="user_name"
+                type="text"
+                class="form-control"
+                id="username"
+                placeholder="john"
+              />
+              <span class="text-danger" *ngIf="shipForm.controls?.['user_name']?.hasError('required') && shipForm.controls?.['user_name']?.touched">
+                user name is <strong>required</strong>
+            </span>
+            <span class="text-danger" *ngIf="shipForm.controls?.['user_name']?.hasError('pattern') && shipForm.controls?.['user_name']?.touched">
+                user name is <strong>only letters</strong>
+            </span>
+            </div>
+            <div class="col-md-6 mt-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input
+              formControlName="email"
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="john@mail.com"
+              />
+              <span class="text-danger" *ngIf="shipForm.controls?.['email']?.hasError('required') && shipForm.controls?.['email']?.touched">
+                email is <strong>required</strong>
+            </span>
+            <span class="text-danger" *ngIf="shipForm.controls?.['email']?.hasError('email') && shipForm.controls?.['email']?.touched">
+                please enter an <strong>email</strong>
+            </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mt-3">
+              <label for="country" class="form-label">Country</label>
+              <input
+              formControlName="country"
+                type="text"
+                class="form-control"
+                id="country"
+                placeholder="egypt"
+              />
+              <span class="text-danger" *ngIf="shipForm.controls?.['country']?.hasError('required') && shipForm.controls?.['country']?.touched">
+                country is <strong>required</strong>
+            </span>
+            <span class="text-danger" *ngIf="shipForm.controls?.['country']?.hasError('pattern') && shipForm.controls?.['country']?.touched">
+                country is <strong>only letters</strong>
+            </span>
+            </div>
+            <div class="col-md-6 mt-3">
+              <label for="city" class="form-label">City</label>
+              <input
+              formControlName="city"
+                type="text"
+                class="form-control"
+                id="city"
+                placeholder="maddi"
+              />
+              <span class="text-danger" *ngIf="shipForm.controls?.['city']?.hasError('required') && shipForm.controls?.['city']?.touched">
+                city is <strong>required</strong>
+            </span>
+            <span class="text-danger" *ngIf="shipForm.controls?.['city']?.hasError('pattern') && shipForm.controls?.['city']?.touched">
+                city is <strong>only letters</strong>
+            </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mt-3">
+              <label for="address" class="form-label">Address</label>
+
+              <input
+              formControlName="address"
+                type="text"
+                class="form-control"
+                id="address"
+                placeholder="21, street"
+              />
+              <span class="text-danger" *ngIf="shipForm.controls?.['address']?.hasError('required') && shipForm.controls?.['address']?.touched">
+                address is <strong>required</strong>
+            </span>
+            
+            </div>
+            <div class="col-md-6 mt-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input
+              formControlName="phoneNumber"
+                type="text"
+                class="form-control"
+                id="phone"
+                placeholder="011764536652"
+              />
+              <span class="text-danger" *ngIf="shipForm.controls?.['phoneNumber']?.hasError('required') && shipForm.controls?.['phoneNumber']?.touched">
+                phone Number is <strong>required</strong>
+            </span>
+            <span class="text-danger" *ngIf="shipForm.controls?.['phoneNumber']?.hasError('pattern') && shipForm.controls?.['phoneNumber']?.touched">
+                phone Number must be exactly 11 digits long and start with "01".
+
+            </span>
+            </div>
+          </div>
+            </form>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
